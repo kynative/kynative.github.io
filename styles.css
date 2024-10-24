@@ -7,6 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Nunito', sans-serif;
+    flex-direction: column; /* Stack elements vertically */
 }
 
 .container {
@@ -25,10 +26,9 @@ body {
 
 .Warning {
     display: flex;
-    position: absolute;
-    border: none;
-    right: 1px;
-    bottom: 1px;
+    position: fixed; 
+    right: 10px;
+    bottom: 10px; 
     text-align: center;
     color: gray;
 }
@@ -37,20 +37,23 @@ body {
     background-color: rgba(0, 0, 0, 0.253);
     flex-direction: row;
     display: flex;
-    position: absolute;
+    position: fixed; 
     bottom: 20px;
-    width: 250px;
-    height: 50px;
-    left: 20px;
+    width: 100%; 
+    max-width: max-content; 
+    left: 50%; 
+    transform: translateX(-50%); 
     border: none;
     box-shadow: 1px 1px 10px;
     border-radius: 8px;
-    justify-content: space-around; 
 }
 
 .containerButtons svg {
-    width: 30px;
-    height: auto;
+    width: 60px;
+    position: relative;
+    top: 1px;
+    display: flex;
+    background-color: transparent;
 }
 
 .down {
@@ -60,30 +63,22 @@ body {
 h1, p {
     text-shadow:  3px 3px 5px rgba(97, 99, 105, 0.7);
     letter-spacing: 2px;
-    line-height: 1.2;
+    line-height: .5; 
     border: none;
 }
 
+/* Media Queries for Mobile Devices */
 @media (max-width: 600px) {
     .containerButtons {
-        width: 100%; 
-        left: 0;
-        padding: 0 10px;
-    }
-
-    .containerButtons svg {
-        width: 25px; 
+        width: 95%; 
+        bottom: 20px;
     }
 
     h1 {
-        font-size: 24px; 
+        font-size: 24px;
     }
 
     p {
-        font-size: 16px; 
-    }
-
-    .Warning {
-        font-size: 12px; 
+        font-size: 16px;
     }
 }
