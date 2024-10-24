@@ -15,6 +15,10 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
+    position: fixed; /* Keep the container fixed */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
 }
 
 .arisha {
@@ -37,7 +41,7 @@ body {
     background-color: rgba(0, 0, 0, 0.253);
     flex-direction: row;
     display: flex;
-    position: static; 
+    position: fixed; 
     bottom: 20px;
     width: 80%; 
     max-width: 250px; 
@@ -47,13 +51,13 @@ body {
     box-shadow: 1px 1px 10px;
     border-radius: 8px;
     padding: 5px;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .containerButtons svg {
-    width: 30px;
-    height: 30px;
-    margin: 0 20px; 
+    width: 30px; 
+    height: 30px; 
+    margin: 0 5px; 
     background-color: transparent;
 }
 
