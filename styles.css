@@ -14,7 +14,6 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    
 }
 
 .arisha {
@@ -32,7 +31,6 @@ body {
     bottom: 1px;
     text-align: center;
     color: gray;
-
 }
 
 .containerButtons {
@@ -47,17 +45,12 @@ body {
     border: none;
     box-shadow: 1px 1px 10px;
     border-radius: 8px;
-    
+    justify-content: space-around; 
 }
 
 .containerButtons svg {
-    width: 60px;
-    position: absolute;
-    top: 7.5px;
-    display: flex;
-    position: relative;
-    border: none;
-    background-color: transparent;
+    width: 30px;
+    height: auto;
 }
 
 .down {
@@ -67,6 +60,30 @@ body {
 h1, p {
     text-shadow:  3px 3px 5px rgba(97, 99, 105, 0.7);
     letter-spacing: 2px;
-    line-height: 1px;
+    line-height: 1.2;
     border: none;
+}
+
+@media (max-width: 600px) {
+    .containerButtons {
+        width: 100%; 
+        left: 0;
+        padding: 0 10px;
+    }
+
+    .containerButtons svg {
+        width: 25px; 
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+
+    p {
+        font-size: 16px; 
+    }
+
+    .Warning {
+        font-size: 12px; 
+    }
 }
