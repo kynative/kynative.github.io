@@ -17,6 +17,13 @@ body {
     
 }
 
+.arisha {
+    box-shadow: 1px 1px 10px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+}
+
 .Warning {
     display: flex;
     position: absolute;
