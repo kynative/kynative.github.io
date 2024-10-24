@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
 }
 
 .container {
@@ -39,20 +39,21 @@ body {
     display: flex;
     position: fixed; 
     bottom: 20px;
-    width: 100%; 
-    max-width: max-content; 
+    width: 80%; 
+    max-width: 250px; 
     left: 50%; 
     transform: translateX(-50%); 
     border: none;
     box-shadow: 1px 1px 10px;
     border-radius: 8px;
+    padding: 5px;
+    justify-content: center;
 }
 
 .containerButtons svg {
-    width: 60px;
-    position: relative;
-    top: 1px;
-    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 0 20px; 
     background-color: transparent;
 }
 
@@ -61,17 +62,16 @@ body {
 }
 
 h1, p {
-    text-shadow:  3px 3px 5px rgba(97, 99, 105, 0.7);
+    text-shadow: 3px 3px 5px rgba(97, 99, 105, 0.7);
     letter-spacing: 2px;
-    line-height: .5; 
+    line-height: 1.2; 
     border: none;
 }
 
-/* Media Queries for Mobile Devices */
 @media (max-width: 600px) {
     .containerButtons {
-        width: 95%; 
-        bottom: 20px;
+        width: 90%; 
+        bottom: 10px;
     }
 
     h1 {
@@ -80,5 +80,9 @@ h1, p {
 
     p {
         font-size: 16px;
+    }
+
+    .Warning {
+        font-size: 12px; 
     }
 }
