@@ -1,3 +1,5 @@
+// not working because on next update i will using maybe if i'm get some iqs in my brain //
+
 const WebSocket = require('ws');
 const wss = new WebSocket.Server({ port: 3000 });
 
